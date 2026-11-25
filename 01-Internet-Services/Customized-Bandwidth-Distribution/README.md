@@ -85,3 +85,18 @@ Because this lab uses a dedicated static IP, outbound traffic from the LAN is tr
 2. Run the following command:
    ```routeros
    ping 8.8.8.8 count=3
+
+   ### Step 8: Configure Customized Bandwidth Queue (`Simple Queue`)
+1. Go to **Queues -> Simple Queues**.
+2. Open the queue rule (or click **New (+)**) and configure the **General** tab:
+   - **Name:** `LAN-Custom-BW`
+   - **Target:** `192.168.88.0/24`
+   - **Target Upload (Max Limit):** `5M`
+   - **Target Download (Max Limit):** `8M`
+3. Click **Apply** and then **OK**.
+
+- **Verification:** In the session captures, `LAN-Custom-BW` (`target=192.168.88.0/24`) was saved in **Simple Queues** with `Upload Max Limit = 5M` and `Download Max Limit = 8M`.
+
+## 4. Notes & Lessons Learned
+- `LAN-Custom-BW` shapes the combined (shared) bandwidth of the entire `192.168.88.0/24` LAN subnet to `5M` upload and `8M` download.
+- If new screenshots are captured later, place them in a `screenshots/` folder inside this lab directory and link them in this `README.md`.
