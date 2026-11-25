@@ -1,10 +1,11 @@
 # ISP Network Operations Lab
 
-MikroTik ও ISP নেটওয়ার্কিং সার্ভিসের প্র্যাকটিক্যাল ডকুমেন্টেশন: কনফিগ, টপোলজি, ভেরিফিকেশন ও ট্রাবলশুটিং রানবুক।
+Practical documentation for MikroTik and ISP networking services: configurations, topologies, verification, and troubleshooting runbooks.
 
 ## Structure
+
 | Folder | Topic |
-|---|---|
+| --- | --- |
 | 01-Internet-Services | Dedicated/Home internet, bandwidth distribution |
 | 02-Data-Connectivity | MPLS, P2P fiber/radio, VPN, CDBL/IPLC |
 | 03-Routing-Switching | Static, OSPF, BGP, VLAN |
@@ -18,7 +19,9 @@ MikroTik ও ISP নেটওয়ার্কিং সার্ভিসে�
 | 11-Troubleshooting-Runbooks | L3 support runbooks |
 
 ## Sanitization Rule
-কমিট করার আগে ক্লায়েন্টের নাম, আসল পাবলিক IP, ASN, MAC, পাসওয়ার্ড ও সিক্রেট সরাতে হবে।
+
+Remove client names, real public IPs, ASNs, MACs, passwords, and secrets before committing.
 
 ## Status
+
 Work in progress.
